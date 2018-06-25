@@ -7,12 +7,26 @@
 
 //Code here
 
+function greeting(name){
+return "Hello, " + name;
+}
+
+console.log(greeting('Brian'));
+
+
 //////////////////PROBLEM 2////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
 //Code Here
+
+var newGreeting = function(name){
+return "Hello, " + name;
+};
+
+console.log(newGreeting('Stewie'));
+
 
 //////////////////PROBLEM 3////////////////////
 
@@ -21,12 +35,19 @@
 
 //Code Here
 
+
+const finalGreeting = (name) => "Hello, " + name;
+console.log(finalGreeting('Peter'));
+
+
 //////////////////PROBLEM 4////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
 
 //Code Here
+
+groceries = ["apples", "milk", "eggs", "bread"];
 
 //Write a function called doubleCheck that takes in an array
 //as a parameter.
@@ -35,6 +56,15 @@
 //doubleCheck should return the array.
 
 //Code Here
+
+function doubleCheck (array){
+  for(var i = 0; i < array.length; i++){
+    if(array[i] != 'chocolate'){
+      array.push('chocolate')
+    }
+  }
+  return array;
+}
 
 //////////////////PROBLEM 5////////////////////
 
@@ -45,15 +75,32 @@
 
 //Code Here
 
+var dog = {
+  name: 'Jabali',
+  color: 'grey and white',
+  age: 5,
+  goodBoy: true
+  bark();
+};
+
+
+
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
 //Code Here
 
+var devMountainClassPet = dog.name;
+
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
 
 //Code Here
+
+dog.bark = function(){
+  return 'Woof woof';
+};
+console.log(bark());
 
 //Store the result of invoking the bark method in a variable called ruff.
 
