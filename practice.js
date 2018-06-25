@@ -100,11 +100,12 @@ var devMountainClassPet = dog.name;
 dog.bark = function(){
   return 'Woof woof';
 };
-console.log(bark());
 
 //Store the result of invoking the bark method in a variable called ruff.
 
 //Code Here
+
+var ruff = bark();
 
 //////////////////PROBLEM 6////////////////////
 
@@ -118,6 +119,15 @@ console.log(bark());
 //Return mySum.
 
 //Code Here
+
+function looper(array){
+  var mySum = 0;
+  for (var i = 0; i < array.length; i++){
+    if (array[i] % 2 !== 0 || array[i] >= 100) {
+	  mySum += array[i];
+  }
+  return mySum;
+}
 
 //////////////////PROBLEM 7////////////////////
 
